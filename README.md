@@ -154,11 +154,12 @@ Created symlink from /etc/systemd/system/multi-user.target.wants/borg-backup.tim
 [root@server ~]# mkdir /etc/testdir && touch /etc/testdir/testfile{01..05}
 [root@server ~]# ll /etc/testdir/
 total 0
--rw-r--r--. 1 root root 0 Jul  5 14:55 testfile01
--rw-r--r--. 1 root root 0 Jul  5 14:55 testfile02
--rw-r--r--. 1 root root 0 Jul  5 14:55 testfile03
--rw-r--r--. 1 root root 0 Jul  5 14:55 testfile04
--rw-r--r--. 1 root root 0 Jul  5 14:55 testfile05
+-rw-r--r--. 1 root root 0 Nov 13 08:58 testfile01
+-rw-r--r--. 1 root root 0 Nov 13 08:58 testfile02
+-rw-r--r--. 1 root root 0 Nov 13 08:58 testfile03
+-rw-r--r--. 1 root root 0 Nov 13 08:58 testfile04
+-rw-r--r--. 1 root root 0 Nov 13 08:58 testfile05
+
 ```
 
 Выполним задание бэкапа взяв подготовленный скрипт из /vagrant :
