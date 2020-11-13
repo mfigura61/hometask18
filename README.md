@@ -112,7 +112,7 @@ borg prune \
 
 **Автоматическое выполнение бэкапа**
 
-Необходимо бэкап делать каждый час. Можно здайствовать cron, но современнее systemd service и systemd timer:
+Необходимо бэкап делать каждый час. Можно здайствовать cron, но современнее systemd service и systemd timer.Все вспомогательные файл прокинулись в диреторию vagrant, оттуда их и переместим в необходимые места, например в /etc/systemd/system в данном случае :
 ```
 [root@server ~]# cat /etc/systemd/system/borg-backup.service
 [Unit]
@@ -161,7 +161,7 @@ total 0
 -rw-r--r--. 1 root root 0 Jul  5 14:55 testfile05
 ```
 
-Выполним задание бэкапа:
+Выполним задание бэкапа взяв подготовленный скрипт из /vagrant :
 ```
 [root@server ~]# ./borg-backup.sh
 ```
