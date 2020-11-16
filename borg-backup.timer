@@ -1,0 +1,12 @@
+[Unit]
+Description=Borg backup timer
+
+[Timer]
+#run hourly
+OnBootSec=3min
+OnUnitActiveSec=5min
+Unit=borg-backup.service
+
+[Install]
+WantedBy=multi-user.target
+
